@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музыкальный Плеер</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="track.css">
+</head>
+
+
+    <header>
+        <div class="logo">Melody Mind</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="album.html">Album</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+                <li><a href="track.html">Tracks</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="singer.html">Singer</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<body class="bg-black text-white">
+    <div class="max-w-4xl mx-auto p-4">
+        <h1 class="text-2xl font-bold text-center mb-4">Music Player</h1>
+        <div class="grid grid-cols-2 gap-4" id="playlist">
+            
+        </div>
+    </div>
+    
+    <script>
+        const tracks = [
+            { title: "Shape of you", artist: "Ed Sheeran", image: "428af1761c995deb93a25b6459f92424.jpg", audio: "Ed Sheeran - Shape of You (Official Music Video).mp3" },
+            { title: "Lovely", artist: "Billie Eilish with Khalid", image: "14ba4b1b72f40314bd9420f4724baadd.jpg", audio: "13_reasons_why_02. lovely (with Khalid).mp3" },
+            { title: "Lollipop", artist: "Gafur", image: "f40744ef684889b5271ec0b23b7e51aa.jpg", audio: "JONY & Gafur - Lollipop.mp3" },
+            { title: "Kuiim", artist: "Alem", image: "0ba2dbc1d6200a6eb49f6a329056df90.jpg", audio: "ALEM - Kúıіm.mp3" },
+            { title: "5000", artist: "IK", image: "ab67616d00001e021f97c3758d64af1488b381f6.jpg", audio: "Ирина Кайратовна - 5000.mp3" },
+            { title: "Belgisiz zhan", artist: "ORDA", image: "DSC07995-fin-f.jpg", audio: "ORDA - Белгiсiз жан.mp3" },
+            { title: "Август это ты", artist: "Mot", image: "78e7e3f16696e1f5f0a82c81fee3c291.jpg", audio: "Мот - Август Это Ты.mp3" },
+            { title: "Love Song", artist: "Adele", image: "05c3ea9a4e20de61b8052e7ecf0e11c1.jpg", audio: "Adele - Love song.mp3" },
+            { title: "Моя Любовь", artist: "Akha", image: "images (11).jpg", audio: "Akha - Моя Любовь.mp3" },
+            { title: " Поцелованная солнцем", artist: "Mona Songz", image: "3c29938fd1368531bc1002ea122ce831.jpg", audio: "Mona Songz - Поцелованная солнцем.mp3" },
+            { title: "DOP", artist: "Yenlik", image: "fe465f0d5d3d81e7bea1bb8122053c04.jpg", audio: "Yenlik - DOP.mp3" },
+            { title: "Перизат", artist: "Kental", image: "ab67616d0000b27389fc5431cadb920a6183c6ef.jpg", audio: "kental-perizat.mp3" },
+            { title: "just-the-way-you-are", artist: "Bruno Mars", image: "12e18bc46400417cc948700e4d9d8c4a.jpg", audio: "bruno-mars-just-the-way-you-are.mp3" },
+            { title: "Baby", artist: "Justin Biber", image: "8fd38c671f208b68199438f4a699ad7b.jpg", audio: "justin-bieber-feat.-ludacris-baby.mp3" },
+            { title: " Dangerous Woman", artist: "Ariana Grande", image: "234bab483206769197541d89313b49e8.jpg", audio: "Ariana Grande - Dangerous Woman.mp3" },
+            { title: "Waka Waka", artist: "Shakira", image: "a77d951e65fadcddb6043a9c0f26a8d7.jpg", audio: "Shakira - Waka Waka (Freemasons Club Mix).mp3" },
+            { title: "Uptown Funk", artist: "Mark Ronson", image: "1771d8826c7a8f7f579649f422fe9f03.jpg", audio: "Mark Ronson - Uptown Funk.mp3" },
+            { title: "Kel Kel", artist: "Ayau", image: "ab67616d00001e02f53bd4aeb42086acc4e7441b.jpg", audio: "Ayau - Kel Kel.mp3" },
+            { title: " Баяғы", artist: "Kazybek Kuraiysh", image: "0x1900-000000-80-0-0.jpg", audio: "Kazybek Kuraiysh - Баяғы.mp3" },
+            { title: "Back to you", artist: "Selena Gomez", image: "51e85877ec05d214f69d6f817586832c.jpg", audio: "Selena Gomez - Back To You.mp3" }
+        ];
+
+        const playlist = document.getElementById('playlist');
+        
+        tracks.forEach(track => {
+            const div = document.createElement('div');
+            div.classList.add("p-3", "bg-gray-800", "rounded-lg", "flex", "items-center", "gap-3");
+            div.innerHTML = `
+                <img src="${track.image}" alt="Cover" class="w-12 h-12 rounded-lg object-cover">
+                <div>
+                    <p class="font-semibold">${track.title}</p>
+                    <p class="text-sm text-gray-400">${track.artist}</p>
+                </div>
+                <button class="-500 text-black px-3 py-1 rounded-lg ml-auto play-button"> •၊၊||၊|။|||| </button>
+                <span class="-500 text-xl ml-2">♡ </span>
+                <audio src="${track.audio}"></audio>
+            `;
+            
+            div.querySelector(".play-button").addEventListener("click", function() {
+                const audio = div.querySelector("audio");
+                if (audio.paused) {
+                    document.querySelectorAll("audio").forEach(a => a.pause());
+                    audio.play();} else {
+                    audio.pause();
+                }
+            });
+            
+            playlist.appendChild(div);
+        });
+    </script>
+</body>
+</html>

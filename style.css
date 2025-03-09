@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.mmm{
+    color: aliceblue;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: orange;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.icons {
+    font-size: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.hero {
+    background:url(https://i.pinimg.com/736x/4f/d7/55/4fd7558100c86ef594ceb12348d1852a.jpg);
+    background-repeat: no-repeat;
+    padding: 100px 20px;
+   background-size: cover;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #ffffff;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #f9ede6;
+}
+
+.hero .sub-text {
+    font-size: 16px;
+    margin-top: 5px;
+    opacity: 0.8;
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.new-arrivals {
+    margin-top: 40px;
+}
+.new-arrivals h2{
+    color: antiquewhite;
+}
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.product {
+    background: #222;
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product p {
+    margin-top: 10px;
+}
+
+
+
+
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 600px;
+    transition: opacity 0.5s ease-in-out;
+    margin-left: 430px;
+}
+
+.album {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.album img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.album:active {
+    transform: scale(1.2);
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    background: none;
+    border: 1px solid white;
+    font-size: 18px;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: gray;
+}
+
+#audioPlayer {
+    position: absolute;
+    bottom: 20px;
+    width: 300px;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .products {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .product {
+        width: 100%;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 0;
+    }
+
+    .album {
+        width: 100%;
+        height: auto;
+    }
+
+    .new-arrivals h2 {
+        font-size: 24px;
+    }
+
+    #audioPlayer {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px;
+    }
+
+    .hero {
+        padding: 40px 10px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .product {
+        width: 90%;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .album {
+        width: 100%;
+    }
+}
+
+
+
+

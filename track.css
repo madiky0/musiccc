@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background: black;
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.track-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.track {
+    background: #1e1e1e;
+    border-radius: 8px;
+    padding: 15px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.track img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.track h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.track p {
+    font-size: 14px;
+    color: #bbb;
+}
+
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.mmm{
+    color: aliceblue;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: orange;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+
+@media (max-width: 768px) {
+    .navbar {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .container {
+        margin-top: 10px;
+    }
+
+    .track-list {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .track {
+        width: 180px;
+        padding: 12px;
+    }
+
+    .track h3 {
+        font-size: 14px;
+    }
+
+    .track p {
+        font-size: 12px;
+    }
+
+    audio {
+        margin-top: 8px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+}
+
+/* Экраны 480px-тан төмен құрылғылар */
+@media (max-width: 480px) {
+    .navbar {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .track-list {
+        gap: 8px;
+    }
+
+    .track {
+        width: 150px;
+        padding: 10px;
+    }
+
+    .track h3 {
+        font-size: 12px;
+    }
+
+    .track p {
+        font-size: 10px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+}
