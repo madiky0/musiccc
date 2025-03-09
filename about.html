@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rechords Store</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .banner {
+            background-color: red;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 50px;
+            width: 700px;
+            height: 300px;
+            
+            margin-left: 400px;
+        }
+        .banner h1 {
+            color: yellow;
+        }
+        .vinyl {
+            width: 100px;
+            height: 100px;
+          
+            border-radius: 50%;
+        }
+        .footer {
+            margin-top: 20px;
+            margin-top: -20px;
+        }
+        .ee{
+            margin-left: 60px;
+            margin-top: -0px;
+        }
+        .ww{
+            color: rgb(251, 152, 90);
+           
+        }
+        header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.mmm{
+    color: aliceblue;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: orange;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+        
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .logo {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+}
+        @media (max-width: 768px) {
+    .banner {
+        flex-direction: column;
+        width: 90%;
+        margin-left: 5%;
+        height: auto;
+        padding: 10px;
+    }
+    
+    .vinyl {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .faq-container {
+        max-width: 90%;
+        padding: 15px;
+    }
+    
+    .footer {
+        margin-top: 10px;
+    }
+    
+    .ee {
+        margin-left: 30px;
+    }
+    
+    .ww {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .vinyl {
+        width: 60px;
+        height: 60px;
+    }
+
+    .faq-question, .faq-answer {
+        font-size: 14px;
+    }
+
+    .footer {
+        margin-top: 20px;
+    }
+}
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo">Melody Mind</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="album.html">Album</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+            <li><a href="track.html">Tracks</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="singer.html">Singer</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+    <div class="banner">
+        <div>
+            <div class="ee">
+            <h1>What can you find in our store?</h1>
+            <p>You can buy "classic" rock albums and modern electronics. There is an assortment of classical music, jazz, metal, hip-hop and more. </p>
+            <p>Buy and write own music</p>
+            <p>Ability to send to anywhere in the world.</p>
+            <p>Melody Mind</p>
+            <img src="c1d3d6e5079ebb505da8abe852aef7ee.jpg" width="80px">
+       
+
+            </div>
+        </div>
+        <div class="vinyl"></div>
+    </div>
+    <div class="footer">
+        
+        
+        
+        
+        </div>
+    </div>
+
+
+    <style>
+    .faq-container {
+        max-width: 600px;
+        margin: auto;
+        background: rgb(14, 13, 13);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .faq-item {
+        border-bottom: 1px solid #252323;
+    }
+    .faq-question {
+        background: #171717;
+        padding: 15px;
+        margin: 0;
+        cursor: pointer;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+    }
+    .faq-answer {
+        display: none;
+        padding: 15px;
+        background: #151313;
+    }
+    .faq-question:hover {
+        background: #3e0505;
+    }
+</style>
+</head>
+<body>
+<div class="faq-container">
+    <h2>Frequently Asked Questions - Melody Mind</h2>
+    
+    <div class="faq-item">
+        <p class="faq-question">What is Melody Mind? <span>+</span></p>
+        <div class="faq-answer">Melody Mind is an online platform that helps musicians create, share, and discover new music.</div>
+    </div>
+    
+    <div class="faq-item">
+        <p class="faq-question">How can I use Melody Mind? <span>+</span></p>
+        <div class="faq-answer">You can use Melody Mind to bought our demo and create your tracks, explore new music genres.</div>
+    </div>
+    
+    <div class="faq-item">
+        <p class="faq-question">Is Melody Mind free to use? <span>+</span></p>
+        <div class="faq-answer">Melody Mind offers both free and premium plans with additional features.</div>
+    </div>
+    
+    <div class="faq-item">
+        <p class="faq-question">Do I need to credit artists when using their music? <span>+</span></p>
+        <div class="faq-answer">Yes, unless you have explicit permission or are using royalty-free tracks.</div>
+    </div>
+</div>
+
+<script>
+    document.querySelectorAll('.faq-question').forEach(item => {
+        item.addEventListener('click', () => {
+            const answer = item.nextElementSibling;
+            const isVisible = answer.style.display === 'block';
+            document.querySelectorAll('.faq-answer').forEach(ans => ans.style.display = 'none');
+            document.querySelectorAll('.faq-question span').forEach(span => span.textContent = '+');
+            answer.style.display = isVisible ? 'none' : 'block';
+            item.querySelector('span').textContent = isVisible ? '+' : '-';
+        });
+    });
+</script>
+</body>
+</html>

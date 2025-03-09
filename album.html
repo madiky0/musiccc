@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Музыкальная Карусель</title>
+    <link rel="stylesheet" href="album.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Melody Mind</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="album.html">Album</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+                <li><a href="track.html">Tracks</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="singer.html">Singer</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    
+
+
+   
+    
+    
+
+    
+
+    <div class="popup hidden">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <img id="popup-img" src="" alt="Album Cover">
+            <h2 id="popup-artist"></h2>
+            <p id="popup-song"></p>
+        </div>
+    </div>
+
+
+    <div class="grid-container">
+        <div class="grid-item"><img src="1cba718918fe89c78193a7d8e897e509.jpg" alt="Album 1"></div>
+        <div class="grid-item"><img src="5348408764258183285.jpg" alt="Album 2"></div>
+        <div class="grid-item"><img src="5348408764258183286.jpg" alt="Album 3"></div>
+        <div class="grid-item"><img src="5348408764258183287.jpg" alt="Album 4"></div>
+        <div class="grid-item"><img src="5348408764258183284.jpg" alt="Album 5"></div>
+        <div class="grid-item"><img src="5348408764258183283.jpg" alt="Album 6"></div>
+        <div class="grid-item"><img src="5348408764258183282 (1).jpg" alt="Album 7"></div>
+        <div class="grid-item"><img src="5348408764258183281.jpg" alt="Album 8"></div>
+    
+    </div>
+
+    <div class="carousel">
+        <div class="carousel-track">
+            <img src="95d17a820a295a97dcb54318f8dee8ce.jpg" alt="Cover 1" data-artist="Jennie Kim" data-song="SOLO">
+            <img src="b4a741e67def5558c00c8f0a01a0afad.jpg" alt="Cover 2" data-artist="Sabrina Carpenter" data-song="Eyes wide open ">
+            <img src="164a71b9abc5ecf891a4ed8ade62f4c3.jpg" alt="Cover 3" data-artist="The Beatles" data-song="Abbey Road">
+            <img src="5275fbf6f58f84ae522e29e434aa893d.jpg" alt="Cover 4" data-artist="Ed Sheeran" data-song="Perfect">
+            <img src="afd3e8918b78040b17f7c01993e20a5a.jpg" alt="Cover 5" data-artist="Shawn Mendes" data-song="Mendes">
+            <img src="baf338fbd794bb86e256905e0d094037.jpg" alt="Cover 6" data-artist="Artist Name" data-song="Song Title">
+            <img src="c9d3d49361cbc77451cc4a124d97ad11.jpg" alt="Cover 7" data-artist="Taylor" data-song="1989">
+            <img src="f8b12fa5b09ab6fea86e754f5dcfe21f.jpg" alt="Cover 8" data-artist="T.S" data-song="1989">
+            <img src="e079a38cddc826ad39b0d9b5ef0ca913.jpg" alt="Cover 9" data-artist="Artist Name" data-song="Icon">
+            <img src="fb127792fa34cb03343eea2490e52056.jpg" alt="Cover 10" data-artist="Elena" data-song="Song">
+        </div>
+    </div>
+
+    <script src="album.js"></script>
+</body>
+</html>
